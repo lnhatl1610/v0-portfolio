@@ -221,7 +221,7 @@ export default function Portfolio() {
               </div>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                {["React", "TypeScript", "Tailwind CSS", "Node.js", "Python", "Esp32"].map(
+                {["C++", "Java", "Html", "Css", "JavaScript", "React.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "Esp32", "git", "mysql", "postman"].map(
                   (skill) => (
                     <Badge key={skill} variant="secondary" className="px-4 py-2 font-body hover-lift">
                       {skill}
@@ -244,7 +244,7 @@ export default function Portfolio() {
             >
               <div className="aspect-square bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/20 rounded-3xl overflow-hidden hover-lift">
                 <img
-                  src="/professional-portrait-photo-modern-studio-lighting.jpg"
+                  src="/avatar.jpg"
                   alt="Professional portrait"
                   className="w-full h-full object-cover transition-all-smooth hover:scale-110"
                 />
