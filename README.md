@@ -1,30 +1,28 @@
-# Portfolio design
+<h1 align="center">Welcome to v0-portfolio 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+## Install
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/nhats-projects-3f1a46e2/v0-portfolio-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/kgqEzLVppWM)
+```sh
+npm install
+```
 
-## Overview
+## Usage
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+```sh
+npm run start
+```
 
-## Deployment
+## Author
 
-Your project is live at:
+👤 **nhat**
 
-**[https://vercel.com/nhats-projects-3f1a46e2/v0-portfolio-design](https://vercel.com/nhats-projects-3f1a46e2/v0-portfolio-design)**
 
-## Build your app
+## Show your support
 
-Continue building your app on:
+Give a ⭐️ if this project helped you!
 
-**[https://v0.app/chat/projects/kgqEzLVppWM](https://v0.app/chat/projects/kgqEzLVppWM)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
