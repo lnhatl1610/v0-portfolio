@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Github, Linkedin, Mail, ExternalLink, Download, Code, Palette, Zap } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, ExternalLink, Download, Code, Palette, Zap, Cpu, Brain } from "lucide-react"
 
 export default function Portfolio() {
   const [scrollY, setScrollY] = useState(0)
@@ -46,18 +46,18 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Modern React-based shopping platform with advanced filtering and seamless checkout experience.",
-      image: "/modern-ecommerce-interface.png",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Stripe"],
-      link: "#",
+      title: "Movie Website",
+      description: "A sleek and responsive movie browsing platform built with React, featuring dynamic search, filtering, and an intuitive user interface.",
+      image: "/movie_web.png",
+      tags: ["React", "JavaScript", "Tailwind CSS"],
+      link: "https://github.com/lnhatl1610/movie_web",
     },
     {
-      title: "Design System",
-      description: "Comprehensive component library and design tokens for consistent brand experience.",
-      image: "/design-system-ui-kit.png",
-      tags: ["Figma", "React", "Storybook", "Design Tokens"],
-      link: "#",
+      title: "Slider 3D",
+      description: "Interactive 3D image slider built with HTML and CSS, offering smooth transitions and immersive visual effects.",
+      image: "/slider_3d.png",
+      tags: ["HTML", "CSS"],
+      link: "https://slider-3d-gilt.vercel.app/",
     },
     {
       title: "Mobile App UI",
@@ -95,7 +95,7 @@ export default function Portfolio() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border/50 transition-all-smooth">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-xl font-bold text-gradient font-heading">Portfolio</div>
+            <div className="text-xl font-bold text-gradient font-heading">MinhNhat</div>
             <div className="hidden md:flex items-center space-x-8">
               {[
                 { label: "Home", ref: heroRef },
@@ -150,9 +150,9 @@ export default function Portfolio() {
         <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
           <div className="animate-fade-in-up">
             <h1 className="text-6xl md:text-8xl font-bold text-balance mb-8 font-heading leading-tight">
-              Creative
-              <span className="text-primary block animate-text-glow">Designer</span>
-              <span className="text-gradient">& Developer</span>
+
+              <span className="text-primary block animate-text-glow">Embedded & IoT</span>
+              <span className="text-gradient">Developer</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-pretty mb-12 font-body leading-relaxed max-w-3xl mx-auto">
               Crafting beautiful digital experiences with modern design and cutting-edge technology that captivate and
@@ -187,41 +187,41 @@ export default function Portfolio() {
             <div className={`transition-all duration-1000 ${isVisible.about ? "animate-fade-in-left" : "opacity-0"}`}>
               <h2 className="text-5xl font-bold mb-8 text-balance font-heading">About Me</h2>
               <p className="text-lg text-muted-foreground mb-6 font-body leading-relaxed">
-                I'm a passionate designer and developer with over 5 years of experience creating digital experiences
-                that combine beautiful aesthetics with functional design. I specialize in modern web technologies and
-                user-centered design principles.
+                I'm a fourth-year student at the Vietnam-Korea University of Information and Communication Technology, specializing in IoT and Embedded Systems. I am passionate about exploring connected devices, microcontrollers, and hardware-software integration to create innovative solutions.
               </p>
               <p className="text-lg text-muted-foreground mb-8 font-body leading-relaxed">
-                When I'm not coding or designing, you can find me exploring new creative techniques, contributing to
-                open-source projects, or sharing knowledge with the design community.
+                In my free time, I enjoy experimenting with embedded projects, learning new technologies, contributing to open-source initiatives, and staying up-to-date with the latest trends in IoT and smart systems.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="flex items-center gap-3 p-4 bg-card rounded-lg hover-lift">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Code className="h-10 w-10 text-primary transition-transform hover:scale-110" />
                   <div>
-                    <h3 className="font-semibold font-heading">Development</h3>
-                    <p className="text-sm text-muted-foreground font-body">React, Next.js, TypeScript</p>
+                    <h3 className="font-semibold font-heading">Web Development</h3>
+                    <p className="text-sm text-muted-foreground font-body">React, TypeScript, Tailwind CSS</p>
                   </div>
                 </div>
+
                 <div className="flex items-center gap-3 p-4 bg-card rounded-lg hover-lift">
-                  <Palette className="h-6 w-6 text-accent" />
+                  <Cpu className="h-10 w-10 text-primary transition-transform hover:scale-110" />
                   <div>
-                    <h3 className="font-semibold font-heading">Design</h3>
-                    <p className="text-sm text-muted-foreground font-body">Figma, UI/UX, Branding</p>
+                    <h3 className="font-semibold font-heading">IoT & Embedded Systems</h3>
+                    <p className="text-sm text-muted-foreground font-body">ESP32, Sensors</p>
                   </div>
                 </div>
+
                 <div className="flex items-center gap-3 p-4 bg-card rounded-lg hover-lift">
-                  <Zap className="h-6 w-6 text-secondary" />
+                  <Brain className="h-10 w-10 text-primary transition-transform hover:scale-110" />
                   <div>
-                    <h3 className="font-semibold font-heading">Performance</h3>
-                    <p className="text-sm text-muted-foreground font-body">Optimization, SEO, Analytics</p>
+                    <h3 className="font-semibold font-heading">AI & Machine Learning</h3>
+                    <p className="text-sm text-muted-foreground font-body">Python, TensorFlow, PyTorch</p>
                   </div>
                 </div>
+
               </div>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                {["React", "TypeScript", "Next.js", "Figma", "Tailwind CSS", "Node.js", "Python", "AWS"].map(
+                {["React", "TypeScript", "Tailwind CSS", "Node.js", "Python", "Esp32"].map(
                   (skill) => (
                     <Badge key={skill} variant="secondary" className="px-4 py-2 font-body hover-lift">
                       {skill}
@@ -276,9 +276,8 @@ export default function Portfolio() {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className={`group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover-lift ${
-                  isVisible.portfolio ? "animate-scale-in" : "opacity-0"
-                }`}
+                className={`group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover-lift ${isVisible.portfolio ? "animate-scale-in" : "opacity-0"
+                  }`}
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="relative overflow-hidden">
@@ -288,10 +287,13 @@ export default function Portfolio() {
                     className="w-full h-56 object-cover transition-all duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
-                    <Button size="sm" variant="secondary" className="gap-2 font-body hover-lift">
-                      <ExternalLink className="h-4 w-4" />
-                      View Project
-                    </Button>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button size="sm" variant="secondary" className="gap-2 font-body hover-lift">
+                        <ExternalLink className="h-4 w-4" />
+                        View Project
+                      </Button>
+                    </a>
+
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -323,22 +325,42 @@ export default function Portfolio() {
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               {[
-                { icon: Mail, title: "Email", value: "hello@portfolio.com", delay: "0s" },
-                { icon: Linkedin, title: "LinkedIn", value: "@yourprofile", delay: "0.2s" },
-                { icon: Github, title: "GitHub", value: "@yourusername", delay: "0.4s" },
-              ].map((contact, index) => (
-                <Card
-                  key={contact.title}
-                  className={`p-8 transition-all duration-700 hover:scale-105 hover-lift ${
-                    isVisible.contact ? "animate-scale-in" : "opacity-0"
-                  }`}
-                  style={{ animationDelay: contact.delay }}
-                >
-                  <contact.icon className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h3 className="font-semibold mb-2 font-heading text-lg">{contact.title}</h3>
-                  <p className="text-muted-foreground font-body">{contact.value}</p>
-                </Card>
-              ))}
+                {
+                  icon: Mail,
+                  title: "Email",
+                  value: "nhatphanminh1610@gmail.com",
+                  link: "mailto:nhatphanminh1610@gmail.com",
+                  delay: "0s",
+                },
+                {
+                  icon: Linkedin,
+                  title: "LinkedIn",
+                  value: "@yourprofile",
+                  link: "https://www.linkedin.com/in/yourprofile",
+                  delay: "0.2s",
+                },
+                {
+                  icon: Github,
+                  title: "GitHub",
+                  value: "@lnhatl1610",
+                  link: "https://github.com/lnhatl1610",
+                  delay: "0.4s",
+                },
+              ]
+                .map((contact, index) => (
+                  <a href={contact.link} target="_blank" rel="noopener noreferrer">
+                    <Card
+                      className={`p-8 transition-all duration-700 hover:scale-105 hover-lift ${isVisible.contact ? "animate-scale-in" : "opacity-0"
+                        }`}
+                      style={{ animationDelay: contact.delay }}
+                    >
+                      <contact.icon className="h-10 w-10 text-primary mx-auto mb-4" />
+                      <h3 className="font-semibold mb-2 font-heading text-lg">{contact.title}</h3>
+                      <p className="text-muted-foreground font-body">{contact.value}</p>
+                    </Card>
+                  </a>
+
+                ))}
             </div>
 
             <Button
@@ -356,7 +378,7 @@ export default function Portfolio() {
       <footer className="py-12 border-t border-border">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-muted-foreground font-body text-lg">
-            © 2024 Creative Portfolio. Designed & developed with passion.
+            © 2025 Creative Portfolio. Designed & developed with passion.
           </p>
         </div>
       </footer>
