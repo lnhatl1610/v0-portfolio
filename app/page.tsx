@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Github, Linkedin, Mail, ExternalLink, Download, Code, Palette, Zap, Cpu, Brain } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, ExternalLink, Download, Code, Facebook, Cpu, Brain } from "lucide-react"
 
 export default function Portfolio() {
   const [scrollY, setScrollY] = useState(0)
@@ -95,7 +95,7 @@ export default function Portfolio() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border/50 transition-all-smooth">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-xl font-bold text-gradient font-heading">MinhNhat</div>
+            <div className="text-xl font-bold text-gradient font-heading">Minh Nhat</div>
             <div className="hidden md:flex items-center space-x-8">
               {[
                 { label: "Home", ref: heroRef },
@@ -155,8 +155,7 @@ export default function Portfolio() {
               <span className="text-gradient">Developer</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground text-pretty mb-12 font-body leading-relaxed max-w-3xl mx-auto">
-              Crafting beautiful digital experiences with modern design and cutting-edge technology that captivate and
-              inspire
+              Designing and developing innovative IoT and embedded systems that create seamless, connected digital experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button
@@ -221,7 +220,7 @@ export default function Portfolio() {
               </div>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                {["C++", "Java", "Html", "Css", "JavaScript", "React.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "Esp32", "git", "mysql", "postman"].map(
+                {["C++", "Java", "Html", "Css", "JavaScript", "React.js", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "Esp32", "Git", "Mysql", "Postman"].map(
                   (skill) => (
                     <Badge key={skill} variant="secondary" className="px-4 py-2 font-body hover-lift">
                       {skill}
@@ -333,10 +332,10 @@ export default function Portfolio() {
                   delay: "0s",
                 },
                 {
-                  icon: Linkedin,
-                  title: "LinkedIn",
-                  value: "@yourprofile",
-                  link: "https://www.linkedin.com/in/yourprofile",
+                  icon: Facebook,
+                  title: "Facebook",
+                  value: "@phan.minh.nhat.57055",
+                  link: "https://www.facebook.com/phan.minh.nhat.57055",
                   delay: "0.2s",
                 },
                 {
@@ -378,7 +377,7 @@ export default function Portfolio() {
       <footer className="py-12 border-t border-border">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-muted-foreground font-body text-lg">
-            © 2025 Creative Portfolio. Designed & developed with passion.
+            © 2025 Creative Portfolio. Built with passion in IoT and embedded systems.
           </p>
         </div>
       </footer>
